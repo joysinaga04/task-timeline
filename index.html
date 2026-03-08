@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tugas Proyek Perancangan Web</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Segoe UI, Arial, sans-serif;
+background:#f4f6fb;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#0d3b66;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+header h1{
+margin-bottom:5px;
+font-size:28px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:30px 20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:25px;
+margin-bottom:25px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card h2{
+color:#0d3b66;
+margin-bottom:15px;
+}
+
+.icon{
+margin-right:8px;
+}
+
+.timeline{
+position:relative;
+padding-left:30px;
+}
+
+.timeline::before{
+content:"";
+position:absolute;
+left:10px;
+top:0;
+width:3px;
+height:100%;
+background:#0d3b66;
+}
+
+.timeline-item{
+margin-bottom:25px;
+position:relative;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+left:-22px;
+top:6px;
+width:12px;
+height:12px;
+background:#f4a261;
+border-radius:50%;
+}
+
+.timeline-date{
+font-weight:bold;
+color:#0d3b66;
+}
+
+.dates{
+margin-top:8px;
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.assign{
+background:#e8f1ff;
+color:#0d3b66;
+padding:6px 10px;
+border-radius:5px;
+font-size:14px;
+}
+
+.due{
+background:#ffeaea;
+color:#b00020;
+padding:6px 10px;
+border-radius:5px;
+font-size:14px;
+}
+
+.note{
+margin-top:20px;
+padding:15px;
+background:#fff4e6;
+border-left:5px solid #f4a261;
+border-radius:6px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+font-size:14px;
+color:#666;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:22px;
+}
+
+.card{
+padding:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1><i class="fa-solid fa-laptop-code"></i> Tugas Proyek</h1>
+<p>Mata Kuliah Perancangan Web</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2><i class="fa-solid fa-calendar-days icon"></i>Timeline Pengumpulan Proyek</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-date">29 April 2026</div>
+<div>Pengumpulan 1 – Progress Sistem Web</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-date">4 Juli 2026</div>
+<div>Pengumpulan 2 – Final Project</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2><i class="fa-solid fa-pen-to-square icon"></i>Treatment / Perbaikan Nilai SUB-CPMK</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<strong>SUB-CPMK 07-1-8 (HTML & CSS)</strong>
+
+<div class="dates">
+<span class="assign">Assign: 1 April 2026</span>
+<span class="due">Due Date: 29 April 2026</span>
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<strong>SUB-CPMK 07-2-8 (Integrasi Sistem)</strong>
+
+<div class="dates">
+<span class="assign">Assign: 1 Juni 2026</span>
+<span class="due">Due Date: 4 Juli 2026</span>
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<strong>SUB-CPMK 07-2-9 (JavaScript)</strong>
+
+<div class="dates">
+<span class="assign">Assign: 1 Juni 2026</span>
+<span class="due">Due Date: 4 Juli 2026</span>
+</div>
+
+</div>
+
+
+<div class="timeline-item">
+
+<strong>SUB-CPMK 07-3-1 (Git)</strong>
+
+<div class="dates">
+<span class="assign">Assign: 1 Juni 2026</span>
+<span class="due">Due Date: 4 Juli 2026</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="note">
+<b>Catatan:</b><br>
+Treatment / perbaikan nilai bersifat <b>opsional</b>.  
+Jika merasa nilai pada SUB-CPMK tertentu belum maksimal, tugas ini dapat dikerjakan sebagai kesempatan memperbaiki nilai.
+</div>
+
+</div>
+
+</div>
+
+<footer>
+Perancangan Web © 2026
+</footer>
+
+</body>
+</html>
