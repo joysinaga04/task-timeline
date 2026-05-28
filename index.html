@@ -1,250 +1,231 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruksi Tugas GitHub Mahasiswa</title>
 
-<title>Tugas Proyek Perancangan Web</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 30px;
+            line-height: 1.6;
+        }
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        .container{
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
 
-<style>
+        h1{
+            text-align: center;
+            color: #333;
+        }
 
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
+        h2{
+            margin-top: 30px;
+            color: #444;
+        }
 
-body{
-font-family:Segoe UI, Arial, sans-serif;
-background:#f4f6fb;
-color:#333;
-line-height:1.6;
-}
+        code{
+            background-color: #eee;
+            padding: 3px 6px;
+            border-radius: 5px;
+        }
 
-header{
-background:#0d3b66;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
+        pre{
+            background-color: #222;
+            color: #00ff88;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
 
-header h1{
-margin-bottom:5px;
-font-size:28px;
-}
+        .step{
+            margin-bottom: 25px;
+        }
 
-.container{
-max-width:1000px;
-margin:auto;
-padding:30px 20px;
-}
+        ul{
+            padding-left: 20px;
+        }
 
-.card{
-background:white;
-border-radius:10px;
-padding:25px;
-margin-bottom:25px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-}
+        .note{
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid orange;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
 
-.card h2{
-color:#0d3b66;
-margin-bottom:15px;
-}
-
-.icon{
-margin-right:8px;
-}
-
-.timeline{
-position:relative;
-padding-left:30px;
-}
-
-.timeline::before{
-content:"";
-position:absolute;
-left:10px;
-top:0;
-width:3px;
-height:100%;
-background:#0d3b66;
-}
-
-.timeline-item{
-margin-bottom:25px;
-position:relative;
-}
-
-.timeline-item::before{
-content:"";
-position:absolute;
-left:-22px;
-top:6px;
-width:12px;
-height:12px;
-background:#f4a261;
-border-radius:50%;
-}
-
-.timeline-date{
-font-weight:bold;
-color:#0d3b66;
-}
-
-.dates{
-margin-top:8px;
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-}
-
-.assign{
-background:#e8f1ff;
-color:#0d3b66;
-padding:6px 10px;
-border-radius:5px;
-font-size:14px;
-}
-
-.due{
-background:#ffeaea;
-color:#b00020;
-padding:6px 10px;
-border-radius:5px;
-font-size:14px;
-}
-
-.note{
-margin-top:20px;
-padding:15px;
-background:#fff4e6;
-border-left:5px solid #f4a261;
-border-radius:6px;
-}
-
-footer{
-text-align:center;
-padding:20px;
-font-size:14px;
-color:#666;
-}
-
-@media(max-width:768px){
-
-header h1{
-font-size:22px;
-}
-
-.card{
-padding:18px;
-}
-
-}
-
-</style>
+        footer{
+            text-align: center;
+            margin-top: 40px;
+            color: gray;
+        }
+    </style>
 </head>
-
 <body>
-
-<header>
-<h1><i class="fa-solid fa-laptop-code"></i> Tugas Proyek</h1>
-<p>Mata Kuliah Perancangan Web</p>
-</header>
 
 <div class="container">
 
-<div class="card">
+    <h1>Instruksi Tugas GitHub Mahasiswa</h1>
 
-<h2><i class="fa-solid fa-calendar-days icon"></i>Timeline Pengumpulan Proyek</h2>
+    <p>
+        Workflow yang digunakan:
+        <b>Fork → Clone → Edit → Commit → Push → Pull Request</b>
+    </p>
 
-<div class="timeline">
+    <div class="step">
+        <h2>1. Buka Repository Dosen</h2>
 
-<div class="timeline-item">
-<div class="timeline-date">29 April 2026</div>
-<div>Pengumpulan 1 – Progress Sistem Web</div>
+        <p>Contoh repository:</p>
+
+        <pre>https://github.com/joyNAS10/LATIHAN-APG</pre>
+    </div>
+
+    <div class="step">
+        <h2>2. Klik Tombol “Fork”</h2>
+
+        <p>
+            Tombol Fork berada di pojok kanan atas GitHub.
+        </p>
+
+        <p>
+            Tujuan Fork:
+            Menyalin repository dosen ke akun GitHub masing-masing.
+        </p>
+    </div>
+
+    <div class="step">
+        <h2>3. Clone Repository Hasil Fork</h2>
+
+        <p>
+            Klik tombol hijau <code>Code</code>, lalu copy URL repository.
+        </p>
+
+        <p>Contoh:</p>
+
+        <pre>https://github.com/namauser/LATIHAN-APG.git</pre>
+
+        <p>Buka Git Bash / CMD lalu ketik:</p>
+
+        <pre>git clone https://github.com/namauser/LATIHAN-APG.git</pre>
+    </div>
+
+    <div class="step">
+        <h2>4. Masuk ke Folder Repository</h2>
+
+        <pre>cd LATIHAN-APG</pre>
+    </div>
+
+    <div class="step">
+        <h2>5. Tambahkan File HTML</h2>
+
+        <p>
+            Masuk ke folder:
+        </p>
+
+        <pre>mahasiswa</pre>
+
+        <p>
+            Buat file sesuai nama masing-masing.
+        </p>
+
+        <p>Contoh:</p>
+
+        <pre>budi.html</pre>
+    </div>
+
+    <div class="step">
+        <h2>6. Isi HTML Data Diri</h2>
+        <p>Contoh isi file seperti Gambar <code>(sesuikan dengan data diri kamu)</code>:</p>
+        <img src="Contoh Tampilan.jpeg" alt="Foto Budi" width="100%" height="400">;
+    </div>
+
+    <div class="step">
+        <h2>7. Simpan File</h2>
+
+        <p>Contoh:</p>
+
+        <pre>mahasiswa/budi.html</pre>
+    </div>
+
+    <div class="step">
+        <h2>8. Git Add</h2>
+
+        <pre>git add .</pre>
+    </div>
+
+    <div class="step">
+        <h2>9. Commit</h2>
+
+        <pre>git commit -m "Menambahkan halaman Budi"</pre>
+    </div>
+
+    <div class="step">
+        <h2>10. Push ke GitHub</h2>
+
+        <pre>git push origin main</pre>
+    </div>
+
+    <div class="step">
+        <h2>11. Buat Pull Request</h2>
+
+        <p>
+            Buka repository GitHub hasil fork.
+        </p>
+
+        <p>
+            Biasanya akan muncul tombol:
+        </p>
+
+        <pre>Compare & Pull Request</pre>
+
+        <p>Klik tombol tersebut.</p>
+    </div>
+
+    <div class="step">
+        <h2>12. Klik “Create Pull Request”</h2>
+
+        <p>Tambahkan deskripsi singkat jika perlu.</p>
+
+        <p>Contoh:</p>
+
+        <pre>Menambahkan halaman HTML data diri.</pre>
+
+        <p>Lalu klik:</p>
+
+        <pre>Create Pull Request</pre>
+    </div>
+
+    <div class="step">
+        <h2>13. Selesai 🎉</h2>
+
+        <p>
+            Dosen akan mereview dan merge hasil pekerjaan mahasiswa.
+        </p>
+    </div>
+
+    <div class="note">
+        <b>Catatan:</b><br>
+        Pastikan nama file menggunakan nama masing-masing.<br>
+        Contoh:
+        <code>budi.html</code>,
+        <code>sinta.html</code>,
+        <code>andi.html</code>
+    </div>
+
+    <footer>
+        Praktikum GitHub Collaboration - Pemrograman Web
+    </footer>
+
 </div>
-
-<div class="timeline-item">
-<div class="timeline-date">4 Juli 2026</div>
-<div>Pengumpulan 2 – Final Project</div>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h2><i class="fa-solid fa-pen-to-square icon"></i>Treatment / Perbaikan Nilai SUB-CPMK</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-
-<strong>SUB-CPMK 07-1-8 (HTML & CSS)</strong>
-
-<div class="dates">
-<span class="assign">Assign: 1 April 2026</span>
-<span class="due">Due Date: 29 April 2026</span>
-</div>
-
-</div>
-
-
-<div class="timeline-item">
-
-<strong>SUB-CPMK 07-2-8 (Integrasi Sistem)</strong>
-
-<div class="dates">
-<span class="assign">Assign: 1 Juni 2026</span>
-<span class="due">Due Date: 4 Juli 2026</span>
-</div>
-
-</div>
-
-
-<div class="timeline-item">
-
-<strong>SUB-CPMK 07-2-9 (JavaScript)</strong>
-
-<div class="dates">
-<span class="assign">Assign: 1 Juni 2026</span>
-<span class="due">Due Date: 4 Juli 2026</span>
-</div>
-
-</div>
-
-
-<div class="timeline-item">
-
-<strong>SUB-CPMK 07-3-1 (Git)</strong>
-
-<div class="dates">
-<span class="assign">Assign: 1 Juni 2026</span>
-<span class="due">Due Date: 4 Juli 2026</span>
-</div>
-
-</div>
-
-</div>
-
-<div class="note">
-<b>Catatan:</b><br>
-Treatment / perbaikan nilai bersifat <b>opsional</b>.  
-Jika merasa nilai pada SUB-CPMK tertentu belum maksimal, tugas ini dapat dikerjakan sebagai kesempatan memperbaiki nilai.
-</div>
-
-</div>
-
-</div>
-
-<footer>
-Perancangan Web © 2026
-</footer>
 
 </body>
 </html>
